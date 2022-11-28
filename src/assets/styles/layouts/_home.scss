@@ -55,3 +55,10 @@ body {
   font-size: 0.75rem;
   text-align: center;
 }
+
+// fallback code for older browsers
+
+@supports (display: grid) {
+  // code for newer browsers
+  // including overrides of the code above, if needed
+}

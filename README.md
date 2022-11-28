@@ -66,3 +66,26 @@ Always run the following commands during the development stage and for productio
 Feel free to create a [new issue](https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues/new/) or drop me a line at jorditarrida@uoc.edu.
 
 Are you using this Boilerplate for your projects or for educational purposes? I would love to hear about it!
+
+---------------------------------------------------------
+
+ENUNCIAT
+
+El lloc web ha de tenir quatre pàgines (pàgina de portada i tres pàgines interiors), seguint els wireframes proporcionats. La temàtica del lloc web ha de ser informació sobre el festival de música que organitzes. Tota la informació que no es proporciona amb l’enunciat, així com la línia gràfica, la pots decidir tu segons els gustos o et convingui. Cal seguir aquestes directrius sobre cada pàgina:
+La pàgina de portada: ha d’estar maquetada amb CSS Grid i has de realitzar algun disseny interessant, semblant al què podria ser un poster promocional de la banda. Com a punt de partida, pots llegir l’article “How I design with CSS Grid” de Chen Hui Jing, on explica com fer una pàgina de portada en format poster. També et pots inspirar en alguns dels vídeos de la Jen Simmons al seu canal Layout Land. La maquetació que realitzis ha de ser compatible amb navegadors que no suportin CSS Grid, usant @supports i oferint una versió alternativa, com s’explica a la guia del mòdul 3.2. Cal que assoleixis els objectius proposats, però no cal que siguis massa creatiu o que perdis moltíssim temps en aquest apartat.
+Una de les pàgines interiors ha d'incloure una retícula amb informació sobre els membres del grup de música, maquetada amb flex. Per a aquesta retícula, no pots utilitzar les classes de Bootstrap .row o .col-*.
+Una de les pàgines interiors ha de seguir un format d’article i incloure un mínim de 4 paràgrafs de text i 2 fotografies. Pot ser una pàgina que contingui informació genèrica del grup de música, una pàgina de l’estil notícia o nota de premsa, o qualsevol altra opció que compleixi els requisits descrits. A banda de la maquetació de la pàgina caldrà que apliquis estils a alguns elements HTML que habitualment podrien formar part d’una pàgina d’aquest tipus, com ara <blockquote> o llistes (com es pot veure al wireframe).
+La tercera pàgina interior és de contingut completament lliure. La pots usar per a ensenyar qualsevol cosa que sàpigues fer o que hagis après. Algunes idees són: una pàgina de contacte amb un formulari funcional (pot ser interessant provar Netlify Forms), una galeria de fotos interactiva, un joc, vídeos…
+El lloc web ha de ser responsive i s’ha de poder visualitzar correctament des de qualsevol dispositiu modern (telèfon, tauleta, ordinador…). A la reunió només vas tenir temps de fer els wireframes de la versió d’escriptori, així que caldrà veure com adaptes a dispositius més petits l’estructura acordada.
+Cal partir de UOC Boilerplate per al teu desenvolupament. Assegura't d'estar-ne usant la darrera versió (en el moment d'escriure aquest enunciat, la darrera versió és la 3.5.0). Cal respectar l’estructura i nomenclatura de carpetes i fitxers (a no ser que la metodologia o guia d’estil escollida indiqui el contrari!). Tens tota la informació sobre la instal·lació i ús a la guia del mòdul 1.
+Cal que facis una tria d’una o més de les metodologies i guies d’estil estudiades al mòdul 2 i l’apliquis al teu desenvolupament.
+Cal usar Bootstrap 5, carregat a UOC Boilerplate i personalitzat amb Sass com s’indica als materials, i usar un mínim de 4 components diferents. Cal personalitzar algun paràmetre dels components utilitzats a través de variables Sass, tal com s’explica a la secció Customize de la documentació de Bootstrap.
+A banda, cal incorporar i usar alguna altra dependència externa, com ara FontAwesome o qualsevol altra que consideris interessant. Pot ser una bona idea per a la pàgina de contingut lliure. Pots explicar al fòrum quina és, per què l’has escollida, i si tens cap dubte o incidència amb el seu ús.
+A més d’aquesta dependència, cal que hi instal·lis Stylelint i en personalitzis la configuració perquè apliqui els criteris d’estils escollits, amb plugins i normes. Cal que un cop executis l’ordre per a validar-ho no hi aparegui cap error.
+Cal utilitzar necessàriament les següents característiques de Sass: variables, imbricació (nesting), funcions, parcials i importació.
+Un cop finalitzat el desenvolupament, cal que publiquis el codi a GitHub i facis un deployment a Netlify, com s’explica a la guia del mòdul 1.
+
+Enllaços d'interes:
+https://www.youtube.com/watch?v=DSsrLrvvPPU
+https://github.com/xgqfrms/css-poster-all-in-one
+
