@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -7,26 +6,68 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
+  
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-        Hola!
-        avui
-        cristina
-          buenas tardes
-      </p>
-      <button class="btn btn-primary">Hola com estas</button>
-      <i class="fas fa-mobile-alt "></i>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4"><img class="logo" src="../img/logotipo.png"></span>
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Members</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Group</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </header>
     </div>
+
+      <div class="container-header">      
+        <h1>Guitar Group</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin elit in vehicula varius. 
+          Maecenas pharetra ultricies molestie. Donec vel commodo sem. Fusce mollis, turpis placerat malesuada 
+          rutrum, leo ligula bibendum lorem, non gravida libero turpis ac leo. Duis aliquet sapien nec tortor 
+          tristique imperdiet. Morbi vitae ipsum eget urna blandit feugiat sed auctor lacus. Nam tincidunt turpis 
+          nec quam fringilla varius. Proin sem ipsum, feugiat eleifend ultrices et, efficitur nec justo.</p>
+        <a href="#"><button class="button-1">+ Information</button></a>
+        <a href="#"><button class="button-2">Photos</button></a>
+        <img class="header-img" src="../img/concert-1.jpg">
+      </div> 
+
+
+
+
+
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">
+            <ul class="links">
+              <li class="link"><a href="#">Home</a></li>
+              <li class="link"><a href="#">Members</a></li>
+              <li class="link"><a href="#">Group</a></li>
+              <li class="link"><a href="#">Contact</a></li>
+            </ul>
+          </span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></i></a></li>
+        </ul>
+      </footer>
+    </div>
+
+
+
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

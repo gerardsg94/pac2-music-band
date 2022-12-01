@@ -3,11 +3,6 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -26,12 +21,12 @@ body {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-.uoc-logo {
+.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
-  max-width: 200px;
+  width: 50px;
   height: auto;
 
   @media (min-width: $mqMinWidth) {
@@ -56,9 +51,126 @@ body {
   text-align: center;
 }
 
+nav {
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+  background-color: #fff;
+}
+
+.header-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-header {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+
+.footer {
+  background-color: #fff;
+  height: 50px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;  
+  font-size: 10px;
+}
+
+.footer ul {
+  text-align: center;
+}
+
+.footer ul li{
+  display: inline-block;
+  margin-top: 20px;
+  padding-right: 18px;
+  text-align: center;
+}
+
+.footer p {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+}
+
+.footer ul li i {
+  width: 30px;
+  font-size: 20px;
+}
+
+// Header 
+
+.button-1 {
+  border: 0;
+  font-size: 100%;
+}
+
+.button-2 {
+  border: 0;
+  font-size: 100%;
+}
+
 // fallback code for older browsers
 
 @supports (display: grid) {
   // code for newer browsers
   // including overrides of the code above, if needed
+  @media (min-width: 42em) and (min-height: 27em) {
+
+  .container-header{
+    max-width: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 200px;
+    grid-template-rows: 1fr 1fr 1fr 50px;
+  }
+  
+  .container-header h1 {
+    grid-area: 1 / 4 / 5 / 5;
+    writing-mode: vertical-rl;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .container-header p {
+    grid-area: 3 / 2 / 4 / 4;
+    align-self: end;
+    margin-bottom: initial;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
+    background-color: #fff;
+  }
+
+  .container-header img {
+    grid-area: 1 / 1 / 5 / 4;
+  }
+
+  .button-1 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .button-2 {
+    grid-area: 4 / 3 / 5 / 4;
+  }
+
+  }
 }
