@@ -15,6 +15,27 @@
   width: $width-format;
 }
 
+.spotify {
+  color: $color-corporate;
+  text-decoration: none;
+  
+  &:hover { color: mixColor($color-corporate, $spotify-color); }
+}
+
+.spotify i {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.playlist {
+  font-size: 34px;
+  font-family: $font-family-sans-serif;
+  color: $color-corporate;
+  text-transform: uppercase;
+  
+  &:hover { color: mixColor($color-corporate, $spotify-color); }
+}
+
 
 @supports (display: grid) {
 
@@ -53,16 +74,28 @@
     }
 
     .button-1 {
-      margin-top: 15px;
       z-index: 2;
       grid-area: 4 / 2 / 5 / 3;
     }
 
     .button-2 {
-      margin-top: 15px;
       z-index: 2;
       grid-area: 4 / 3 / 5 / 4;
     }
+
+    .spotify {
+      z-index: 2;
+      grid-area: 2 / 2 / 4/ 4;
+    }
+
+    .spotify i {
+      color: $white-color;
+      font-size: 300px;
+      
+      &:hover { color: mixColor($color-corporate, $spotify-color); }
+    }
     
+    .playlist-hidden { color: transparent; }
+
   }
 }
