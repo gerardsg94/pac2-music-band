@@ -23,6 +23,8 @@
 .spotify i {
   font-size: 40px;
   margin-top: 10px;
+
+  &:hover { color: mixColor($color-corporate, $spotify-color); }
 }
 
 .playlist {
@@ -89,13 +91,11 @@
     .spotify i {
       color: $white-color;
       font-size: 300px;
-      
-      &:hover { color: mixColor($color-corporate, $spotify-color); }
     }
     
     .playlist { 
       color: transparent;
-      &:hover { color: transparent; }
+      &:hover { color: transparent !important; }
     }
 
   }
