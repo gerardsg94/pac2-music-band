@@ -1,0 +1,8 @@
+//Functions file
+
+//Function to get dark color
+
+@function mixColor($c1, $c2) {
+
+    @return mix($c1, $c2, 15%);
+}

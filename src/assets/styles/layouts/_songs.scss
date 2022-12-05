@@ -1,0 +1,83 @@
+/*Styling songs main container without Grid*/
+
+.container-songs {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $padding-format; 
+    padding-left: $padding-format; 
+    width: $width-format - 25%; 
+}
+
+.video-songs {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+
+    &:before {
+        padding-top: 56.25%;
+        display: block;
+        content: "";
+    }
+}
+
+.video-songs-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.grid-container-songs { margin-bottom: 50px; } 
+
+.item-songs {
+    margin-bottom: 24px;
+    background-color: $white-color;
+}
+
+.item-songs p {
+    padding-top: 0;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+.item-songs h2 {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/*Grid supports to use Grid*/
+
+@supports (display: grid) {
+
+    @media (min-width: 672px) and (min-height: 432px) {
+
+        .grid-container-songs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 24px;
+        }
+    
+        .container-songs { width: $width-format - 25%;}    
+    }
+}
+
+/*Mobile & tablet responsive width without Grid*/
+
+@media (max-width: 671px) {
+
+    .container-songs {width: $width-format - 25%;}  
+}

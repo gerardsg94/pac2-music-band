@@ -5,12 +5,14 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #fff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
+$color-corporate: #353232;
+$padding-format: 15px;
+$margin-format: 10px;
+$width-format: 85%;
+$white-color: #fff;
 
 $theme-colors: (
- "primary": green // posa-hi el codi de color que prefereixis
+ "dark": $color-corporate,
+ "white": $white-color,
+ "active": $color-corporate
 );

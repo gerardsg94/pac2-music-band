@@ -89,3 +89,6 @@ Enllaços d'interes:
 https://www.youtube.com/watch?v=DSsrLrvvPPU
 https://github.com/xgqfrms/css-poster-all-in-one
 
+
+ENLLAÇ D'INTERES
+https://octuweb.com/html-css-dan-mucho-juego/

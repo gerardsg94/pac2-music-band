@@ -1,73 +1,40 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Guitar Group</title>
   </head>
-  
   <body>
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4"><img class="logo" src="../img/logotipo.png"></span>
-        </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Members</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Group</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </header>
-    </div>
-
-      <div class="container-header">      
-        <h1>Guitar Group</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin elit in vehicula varius. 
-          Maecenas pharetra ultricies molestie. Donec vel commodo sem. Fusce mollis, turpis placerat malesuada 
-          rutrum, leo ligula bibendum lorem, non gravida libero turpis ac leo. Duis aliquet sapien nec tortor 
-          tristique imperdiet. Morbi vitae ipsum eget urna blandit feugiat sed auctor lacus. Nam tincidunt turpis 
-          nec quam fringilla varius. Proin sem ipsum, feugiat eleifend ultrices et, efficitur nec justo.</p>
-        <a href="#"><button class="button-1">+ Information</button></a>
-        <a href="#"><button class="button-2">Photos</button></a>
-        <img class="header-img" src="../img/concert-1.jpg">
-      </div> 
-
-
-
-
-
-
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-muted">
-            <ul class="links">
-              <li class="link"><a href="#">Home</a></li>
-              <li class="link"><a href="#">Members</a></li>
-              <li class="link"><a href="#">Group</a></li>
-              <li class="link"><a href="#">Contact</a></li>
-            </ul>
-          </span>
+    <header class="container w-75">
+      <nav class="navbar py-3 mb-4 border-bottom">
+        <div class="container-fluid mx-auto limit-logo me-md-auto">
+          <a href="./index.html"><img class="w-75" src="./assets/images/logotipo.png"></a>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-youtube"></i></i></a></li>
+        <ul class="mx-auto nav nav-pills w-50">
+          <li class="nav-item mx-auto"><span class="nav-link active bg-dark text-white">Home</span></li>
+          <li class="nav-item mx-auto"><a class="nav-link effect text-dark" href="./members.html">Members</a></li>
+          <li class="nav-item mx-auto"><a class="nav-link effect text-dark" href="./blog.html">Blog</a></li>
+          <li class="nav-item mx-auto"><a class="nav-link effect text-dark" href="./songs.html">Songs</a></li>
         </ul>
-      </footer>
-    </div>
-
-
-
-
+      </nav>
+    </header> 
+    <div class="main-container">      
+      <h1>Last Album</h1>
+      <p> The band started their journey with the intention to explore
+          the frontiers of modern melodic rock, including catchy
+          guitar riffs, the use of synths & keyboards, and a variety
+          of different sounds and rhythms, trying to develop their
+          own music personality. From a lyrical point, the band gets
+          inspired by the recent tragedies that affect the earth and
+          human race. They try to spread their message over all those
+          who want to listen. </p>
+        <a class="button-1" href="./blog.html"><button class="btn btn-dark btn-lg">Last Article</button></a>
+        <a class="button-2" href="./songs.html"><button class="btn btn-dark btn-lg">Album Songs</button></a>
+        <img class="main-img" src="./assets/images/concert-1.jpg">
+    </div> 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

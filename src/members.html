@@ -1,73 +1,79 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Guitar Group - Members</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <ul class="links">
-          <li class="link"><a href="#">Members</a></li>
-          <li class="link"><a href="#">Group</a></li>
-          <li class="link"><a href="#">Contact</a></li>
+    <header class="container w-75">
+      <nav class="navbar py-3 mb-4 border-bottom">
+        <div class="container-fluid mx-auto limit-logo me-md-auto">
+          <a href="./index.html"><img class="w-75" src="./assets/images/logotipo.png"></a>
+        </div>
+        <ul class="mx-auto nav nav-pills w-50">
+          <li class="nav-item mx-auto"><a class="nav-link effect text-dark" href="./index.html">Home</a></li>
+          <li class="nav-item mx-auto"><span class="nav-link active bg-dark text-white">Members</span></li>
+          <li class="nav-item mx-auto"><a class="nav-link effect text-dark" href="./blog.html">Blog</a></li>
+          <li class="nav-item mx-auto"><a class="nav-link effect text-dark" href="./songs.html">Songs</a></li>
         </ul>
       </nav>
-    </header>
-
+    </header> 
     <section>
+      <div class="container-members">
         <div>
-            <img>
-            <p></p>
-            <p></p>
-            <p></p>
+          <img src="./assets/images/member-1.jpg">
+          <h2>Antonio Lozano</h2>
+          <p>Drummer & Singer</p>
+          <p>Follow him on <a class="text-dark" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a>
+          </p>
         </div>
         <div>
-            <img>
-            <p></p>
-            <p></p>
-            <p></p>
+          <img src="./assets/images/member-2.jpg">
+          <h2>Nicolas Bonaventura</h2>
+          <p>Guitarist</p>
+          <p>Follow him on <a class="text-dark" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a></p>
         </div>
         <div>
-            <img>
-            <p></p>
-            <p></p>
-            <p></p>
+          <img src="./assets/images/member-3.jpg">
+          <h2>Ricardo Ponteverde</h2>
+          <p>Singer</p>
+          <p>Follow him on <a class="text-dark" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a></p>
         </div>
         <div>
-            <img>
-            <p></p>
-            <p></p>
-            <p></p>
+          <img src="./assets/images/member-4.jpg">
+          <h2>Eric Pontebrada</h2>
+          <p>Basist</p>
+          <p>Follow him on <a class="text-dark" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a></p>
         </div>
+        <div>
+          <img src="./assets/images/member-5.jpg">
+          <h2>Alberto Fuenlabrada</h2>
+          <p>Drummer & Guitarist</p>
+          <p>Follow him on <a class="text-dark" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a></p>
+        </div>
+        <div>
+          <img src="./assets/images/member-6.jpg">
+          <h2>Carlos Bonaverde</h2>
+          <p>Drummer & Synths player</p>
+          <p>Follow him on <a class="text-dark" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="text-dark" href="#"><i class="fa-brands fa-instagram"></i></a></p>
+        </div>
+      </div>
     </section>
-
-
-    <footer>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin elit in vehicula varius. 
-        Maecenas pharetra ultricies molestie.</p>
-      
-      <div>
-        <ul class="links">
-          <li class="link"><a href="#">Index</a></li>
-          <li class="link"><a href="#">Members</a></li>
-          <li class="link"><a href="#">Group</a></li>
-          <li class="link"><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-youtube"></i></i></a></li>
-        </ul>
-      </div>
-    </footer>
-
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
