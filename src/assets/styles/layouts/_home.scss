@@ -18,8 +18,6 @@
 .spotify {
   color: $color-corporate;
   text-decoration: none;
-  
-  &:hover { color: mixColor($color-corporate, $spotify-color); }
 }
 
 .spotify i {
