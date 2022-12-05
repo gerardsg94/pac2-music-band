@@ -93,7 +93,10 @@
       &:hover { color: mixColor($color-corporate, $spotify-color); }
     }
     
-    .playlist-hidden { color: transparent; }
+    .playlist { 
+      color: transparent;
+      &:hover { color: transparent; }
+    }
 
   }
 }
