@@ -6,7 +6,8 @@
 }
 
 .main-container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   padding-top: $padding-format;
   padding-left: $padding-format;
@@ -68,10 +69,7 @@
       background-color: $white-color;
     }
 
-    .main-container img {
-      grid-area: 1 / 1 / 5 / 4;
-      margin-top: 0;
-    }
+    .main-container img { grid-area: 1 / 1 / 5 / 4; }
 
     .button-1 {
       z-index: 2;
