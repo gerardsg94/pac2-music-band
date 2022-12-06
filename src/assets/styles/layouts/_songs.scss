@@ -71,7 +71,7 @@
             grid-gap: 24px;
         }
     
-        .container-songs { width: $width-format - 25%;}    
+        .container-songs { width: $width-format - 25%; }    
     }
 }
 
@@ -79,5 +79,5 @@
 
 @media (max-width: 671px) {
 
-    .container-songs {width: $width-format;}  
+    .container-songs { width: $width-format; }  
 }
